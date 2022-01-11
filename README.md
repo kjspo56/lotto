@@ -1,6 +1,6 @@
-# randomlotto
+# 로또 번호 추첨 시스템
 
-> random
+> 로또 번호 추첨
 
 ## Build Setup
 

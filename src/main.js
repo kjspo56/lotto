@@ -1,6 +1,8 @@
-//뷰를 설치했던것을 import로 가져온다
 import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
 
-import LottoGenerator from './LottoGenerator.vue';
-
-new Vue(LottoGenerator).$mount('#root');
+new Vue({
+  router,
+  render: h => h(App),
+}).$mount('#app');

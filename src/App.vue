@@ -1,21 +1,30 @@
 <template>
-  <div id="root">
-    <Header></Header>
-      <Content></Content>
-      <Footer></Footer>
+  <div>
+    <Header />
+    <router-view />
+    <Footer />
   </div>
 </template>
 
+
 <script>
-import Header from './components/Header.vue'
-import Content from './components/Content.vue'
-import Footer from './components/Footer.vue'
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+import LottoGenerator from './views/LottoGenerator.vue';
 
 export default {
   components: {
-    'Header': Header,
-    'Content': Content,
-    'Footer': Footer,
-  }
-}
+    Header,
+    Footer,
+    LottoGenerator,
+  },
+};
 </script>
+
+<style scoped>
+.container {
+  padding: 1rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+</style>
